@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quality</title>
+    <link rel="stylesheet" href="CSS/styles.css" type="text/css">
+</head>
+
+<body>
+
+    <a href class="scroll">Scroll <br >to <br> Top</a>  <!--This is the scroll to top button-->
+
+    
+    <script>
+    
+    // This function is assigned to scroll and the the scrollFunction will come when scrolling happens
+    window.onscroll = function() {scrollFunction()};
+    
+    
+    function scrollFunction() {
+        // Choose the element with class 'scroll'
+        var scrolltotop = document.querySelector('.scroll');
+
+        // This will allow the scroll to top buttom to be activated when the user scrolls down
+        // When the user scrolls 25px down, the button will automatically show 
+        if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
+            scrolltotop.style.display = "block";
+        } else {
+        //If the user hasn't scrolled down, it will not show it until it goes 25px down
+            scrolltotop.style.display = "none";
+        }
+    }
+    </script>
+
+
+    <!--This is the image header of the logo-->
+    <div class="header">
+        <nav>
+            <a href="home.html"><img class="logoleft2" src="Picture2.png"></a> <!--This is the logo that will redirect to the home page-->
+
+
+        </nav>
+    </div>
+
+    <!--This is the navigation between the web pages-->
+    <div class="nav-links">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="content_ST2.html">Content</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="pageEditor_ST2.html">Page Editor</a></li>
+
+
+        </ul>
+    </div>
+    <!--This is a section of the web page that has JavaScript of two image slideshow-->
+    <div class="sectionl"> 
+
+        <script>
+            var i = 0; // Start point
+            var images = [];
+            var time = 2000; // This is the time between each image
+            
+            // Image List
+            images[0] = 'qualityimage.png';
+            images[1] = 'qualityimage2.png';
+            
+            // This is the function that will change the image
+            function changeImg(){
+            document.slide.src = images[i];
+            
+            // This will loop back to the beginning when it reaches the end of the images array
+            if(i < images.length - 1){
+            i++;
+            } else {
+            i = 0;
+            }
+            setTimeout("changeImg()",time); // The function will directly be passed instead of a string
+            }
+            
+            
+            
+            window.onload = changeImg; // The function will be alerted when the window is loaded
+            
+            
+            
+            </script>
+
+<center><img name="slide"></center>
+         
+        
+        </div>
+
+
+
+<!--This is another section of the web page that will show boxes with information-->
+    <div class="section2">
+
+        <center><h1>Global challenges to Access Quality Education</h1></center>
+
+        <center> 
+            <div class="box">
+                <p>Countless children throughout the world are denied access to the classroom, while others are forced to drop out owing to overcrowded facilities, conflict zones, or simply gender discrimination.</p>
+            </div>
+        
+            <div class="box">
+                <p>Across nations, including the United Kingdom, the cycle of poverty reinforces educational gaps, with low-income children persistently falling their wealthier its peers. This educational deficiencies frequently translates into insufficient literacy, keeping them in a cycle of low-wage occupations and unemployment.</p>
+            </div>
+        
+            <div class="box">
+                <p>Numerous hurdles exist across the world that prevent people from pursuing education. However, from booming metropolis to isolated villages, children continue to have a common desire to study because they see its transforming power in opening doors to a better future.</p>
+            </div>
+        </center>
+
+        </div>
+
+    </div>
+
+
+<!--This is another section of the web page that will show boxes with information-->
+    <div class="sectionl">        
+        <img class="contentimg1" src="st2contentpic1.png">
+    </div>
+
+    <div class="section2">
+
+        <center><h1>WITHOUT ADDITIONAL MEASURES, BY 2030:</h1></center>
+
+           <center> 
+            <div class="box">
+                <h2>84 MILLION</h2>
+                <p>CHILDREN AND YOUTH WILL BE OUT OF SCHOOL</p>
+            </div>
+        
+            <div class="box">
+                <h2>300 MILLION</h2>
+                <p>STUDENTS WILL LACK BASIC NUMERACY/LITERACY SKILLS</p>
+            </div>
+        
+            <div class="box">
+                <h2>ONLY 1 IN 6</h2>
+                <p>COUNTRIES WILL ACHIEVE UNIVERSAL SECONDARY SCHOOL COMPLETION TARGET</p>
+            </div>
+            </center>
+        </div>
+
+    </div>
+    
+    <!--This is another section of the web page-->
+    <div class="sectionl">        
+        <img class="contentimg2" src="st2contentpic2.png">
+    </div>
+
+<!--This is the footer of the web page-->
+    <div class="footer">
+        <footer>
+            <center><p>© 2024 Qaulity Education, Inc. All Rights Reserved</p></center>
+        </footer>
+    </div>
+
+    
+
+
+</body>
+
+</html>

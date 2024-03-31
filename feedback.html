@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quality</title>
+    <link rel="stylesheet" href="CSS/styles.css" type="text/css">
+</head>
+
+<body>
+    <!--This is the image header of the logo-->
+    <div class="header">
+        <nav>
+            <a href="home.html"><img class="logoleft2" src="Picture2.png"></a> <!--This is the logo that will redirect to the home page-->
+
+
+        </nav>
+    </div>
+
+    <!--This is the navigation between the web pages-->
+    <div class="nav-links">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="content_ST2.html">Content</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="pageEditor_ST2.html">Page Editor</a></li>
+
+
+        </ul>
+    </div>
+    
+        <!--This is a section of the web page and within the section 
+        there will be feedback form-->
+    <div class="section3">
+
+        <!--The is a form for collecting feedback-->
+    <div class="feedback-form">
+                <form>
+                    <fieldset>
+                        <legend><h1>Feedback Form</h1></legend>
+                        <center><p>****REQUIRED FORMS****</p></center>
+                            <label for="name">Your Name:</label><br><br>
+                            <input type="text" id="name" class="input-section" required><br>
+
+                            <label for="email">Your Email:</label><br><br>
+                            <input type="email" id="email" class="input-section" required><br> <!--The input fields for name and email.-->
+
+                            <label>Was this your first time visiting?</label><br>
+                            <input type="radio" id="first-time-yes" name="first-time" value="Yes" required> <!--Radio button for Yes-->
+                            <label for="first-time-yes">Yes</label>
+                            <input type="radio" id="first-time-no" name="first-time" value="No" required> <!--Radio button for No-->
+                            <label for="first-time-no">No</label><br>
+                            
+                            <br><br>
+
+                            <label>Was this website informative and easy to navigate through?</label><br>
+                            <input type="radio" id="informative-yes" name="informative" value="Yes" required> <!--Radio button for Yes-->
+                            <label for="informative-yes">Yes</label>
+                            <input type="radio" id="informative-no" name="informative" value="No" required> <!--Radio button for No-->
+                            <label for="informative-no">No</label><br>
+
+                            <br><br>
+
+                            <label>How satisfied are you with the website? 1 - Not satisfied at all to 10 - Extremely satisfied </label><br>
+                            <select name="Rating" required>
+                                <option value="">Select</option> <!--Dropdown menu for the rating of satisfaction-->
+                                <option value="1">1 - Not satisfied at all</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10 - Extremely satisfied</option>
+                            </select>
+
+                            <br><br>
+
+                            <label>Do you have any additional questions or requests?</label><br><br><br>
+                            <textarea id="message" class="input-section"></textarea><br> <!--Text area for additional questions-->
+                        
+                             <input type="submit" value="Send"> <!--Submit button to send after done-->
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+    
+    <!--This is the footer of the web page-->
+    <div class="footer">
+        <footer>
+            <center><p>© 2024 Qaulity Education, Inc. All Rights Reserved</p></center>
+        </footer>
+    </div>
+
+</body>
+
+</html>
